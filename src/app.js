@@ -11,7 +11,6 @@ app.get("/health", (req, res) => {
     uptime: process.uptime(),
   });
 });
-res.status(200).json({ status: "healthy", uptime: process.uptime() });
 
 module.exports = app;
 
